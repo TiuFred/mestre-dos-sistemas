@@ -1,0 +1,67 @@
+dialogo_cledson_introdução:
+  text: "Ou, eu tava indo pro meu trampo, mas aí eu vi que minha conta tava meio vazia, sabe? Tava precisando de um empréstimozinho, só uns R$1200. Eu vou investir tudo no Tucaninho, melhor lugar que eu conheço pra ganhar dinheiro fácil. Não vou vacilar e perder tudo de novo."
+  next_node: "cledson_p1"
+  terminal: false
+
+cledson_p1:
+  text: "Você consegue me explicar o que é um empréstimo?"
+  terminal: false
+  feedback:
+    character: "Cledson"
+    question: "O que é um empréstimo?"
+    correctAnswer: "Um dinheiro que o banco empresta e que depois deve ser devolvido com acréscimos."
+    tip: "O banco empresta o dinheiro, mas ele deve ser devolvido no prazo determinado quando o empréstimo for feito."
+  choices:
+    escolha_1_1:
+      text: "Um valor que o banco dá de presente para o cliente."
+      next_node: "cledson_p2"
+    escolha_2_1:
+      text: "Um dinheiro que o banco empresta e que depois deve ser devolvido com acréscimos."
+      next_node: "cledson_p2"
+    escolha_3_1:
+      text: "Um dinheiro que não precisa ser devolvido se demorar para pagar."
+      next_node: "cledson_p2"
+  correct_choice: "escolha_2_1"
+
+cledson_p2:
+  text: "Mas se eu pegar o empréstimo parcelado em muitas vezes, eu pago menos juros?"
+  terminal: false
+  feedback:
+    character: "Cledson"
+    question: "Parcelar em muitas vezes reduz os juros?"
+    correctAnswer: "Os juros costumam aumentar, e a pessoa paga mais no total."
+    tip: "Os juros tendem a aumentar conforme o prazo do empréstimo aumenta. Quanto maior o número de parcelas, maior costuma ser o valor total pago."
+  choices:
+    escolha_1_2:
+      text: "O valor total sempre diminui quanto mais parcelas tiver."
+      next_node: "cledson_p3"
+    escolha_2_2:
+      text: "Os juros costumam aumentar, e a pessoa paga mais no total."
+      next_node: "cledson_p3"
+    escolha_3_2:
+      text: "A quantidade de parcelas não muda nada no valor final."
+      next_node: "cledson_p3"
+  correct_choice: "escolha_2_2"
+
+cledson_p3:
+  text: "Eu quero R$1200 emprestado, qual a opção que ficará mais em conta no final contando os juros?"
+  terminal: true
+  feedback:
+    character: "Cledson"
+    question: "Qual parcelamento de R$1.200 é mais barato no total?"
+    correctAnswer: "Pagar em 6 parcelas de 230 reais (total: R$1.380)"
+    tip: "6×R$230 = R$1.380, a opção mais barata. 3×R$470 = R$1.410 e 9×R$170 = R$1.530 são mais caras."
+  choices:
+    escolha_1_3:
+      text: "Pagar em 9 parcelas de 170 reais"
+      event: "achievement_first_client"
+      next_node: null
+    escolha_2_3:
+      text: "Pagar em 3 parcelas de 470 reais"
+      next_node: null
+      event: "achievement_first_client"
+    escolha_3_3:
+      text: "Pagar em 6 parcelas de 230 reais"
+      next_node: null
+      event: "achievement_first_client"
+  correct_choice: "escolha_3_3"

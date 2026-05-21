@@ -1,0 +1,67 @@
+dialogo_lucas_introducão:
+  text: "Tudo bem? Olha, eu ganho um salário considerado alto, 11 mil reais, mas sinto que o dinheiro some. Estou querendo comprar um carro novo que custa 80 mil reais. Queria saber qual é o limite seguro para eu comprometer do meu bolso sem passar aperto para pagar o básico."
+  next_node: "lucas_p1"
+  terminal: false
+
+lucas_p1:
+  text: "Comprometer grande parte do salário com parcelas pode causar o quê?"
+  terminal: false
+  feedback:
+    character: "Lucas"
+    question: "O que acontece ao comprometer grande parte do salário com parcelas?"
+    correctAnswer: "Dificuldade para pagar outras contas."
+    tip: "O salário não aumenta por causa de uma compra de alto valor, e os juros não reduzem automaticamente. Comprometer demais o salário dificulta o pagamento das contas básicas."
+  choices:
+    escolha_1_1:
+      text: "Redução de juros."
+      next_node: "lucas_p2"
+    escolha_2_1:
+      text: "Aumento automático do salário."
+      next_node: "lucas_p2"
+    escolha_3_1:
+      text: "Dificuldade para pagar outras contas."
+      next_node: "lucas_p2"
+  correct_choice: "escolha_3_1"
+
+lucas_p2:
+  text: "Qual dessas opções aqui é uma regra saudável?"
+  terminal: false
+  feedback:
+    character: "Lucas"
+    question: "Qual é uma regra saudável para comprometimento de renda?"
+    correctAnswer: "Parcelas não devem comprometer quase todo o salário."
+    tip: "Quanto maior a parcela e a duração, pior para o bolso. Nunca usar todo o limite disponível também é uma prática positiva."
+  choices:
+    escolha_1_2:
+      text: "Parcelas não devem comprometer quase todo o salário."
+      next_node: "lucas_p3"
+    escolha_2_2:
+      text: "Quanto maior a parcela e maior duração, melhor."
+      next_node: "lucas_p3"
+    escolha_3_2:
+      text: "Sempre usar todo o limite disponível."
+      next_node: "lucas_p3"
+  correct_choice: "escolha_1_2"
+
+lucas_p3:
+  text: "Visto que eu recebo 11.000 reais por mês, qual das opções menos compromete meu orçamento?"
+  terminal: true
+  feedback:
+    character: "Lucas"
+    question: "Qual parcela compromete menos o orçamento de R$11.000?"
+    correctAnswer: "Parcela de 2.500 reais por 36 meses."
+    tip: "A parcela de 2.500 por 36 meses totaliza R$90.000. É a opção mais equilibrada: a parcela de R$4.500 é alta demais e a de R$2.000 por 48 meses gera mais juros no total."
+  choices:
+    escolha_1_3:
+      text: "Parcela de 4.500 reais por 24 meses."
+      next_node: null
+      event: "achievement_day_2_complete"
+    escolha_2_3:
+      text: "Parcela de 2.000 reais por 48 meses."
+      next_node: null
+      event: "achievement_day_2_complete"
+    escolha_3_3:
+      text: "Parcela de 2.500 reais por 36 meses."
+      next_node: null
+      event: "achievement_day_2_complete"
+  correct_choice: "escolha_3_3"

@@ -1,0 +1,44 @@
+dialogo_roberto_introducão:
+  text: "Boa tarde. Minha família cresceu e as contas também, sabe? Me falaram que eu preciso de um tal de planejamento familiar, mas na prática eu não sei por onde começar. Às vezes sinto que parcelar tudo em 24 vezes resolve o problema de agora, mas tenho medo de virar uma bola de neve lá na frente."
+  next_node: "roberto_p1"
+  terminal: false
+
+roberto_p1:
+  text: "Me falaram sobre um tal de planejamento financeiro familiar. Você pode me explicar o que é?"
+  terminal: false
+  feedback:
+    character: "Roberto"
+    question: "O que é planejamento financeiro familiar?"
+    correctAnswer: "Organizar os gastos considerando toda a renda e os custos da família."
+    tip: "O planejamento financeiro familiar é uma estratégia para organizar todos os gastos de uma família, considerando gastos fixos (aluguel, contas) e gastos extras (lazer, restaurantes)."
+  choices:
+    escolha_1_1:
+      text: "Gastar primeiro o dinheiro e depois pensar o que fazer."
+      next_node: "roberto_p2"
+    escolha_2_1:
+      text: "Organizar os gastos considerando toda a renda e os custos da família."
+      next_node: "roberto_p2"
+    escolha_3_1:
+      text: "Comprar tudo parcelado."
+      next_node: "roberto_p2"
+  correct_choice: "escolha_2_1"
+
+roberto_p2:
+  text: "Mas qual consequência posso chegar se eu não fizer o meu planejamento financeiro do jeito certo?"
+  terminal: true
+  feedback:
+    character: "Roberto"
+    question: "Por que é tão importante o planejamtno financeiro?"
+    correctAnswer: "Porque aumentam o tempo da dívida e os juros."
+    tip: "Caso o gasto seja maior do que o dinheiro que recebe, pode faltar dinheiro para coisas essenciais, como alimentação, luz e água."
+  choices:
+    escolha_1_2:
+      text: "Você pode acabar gastando mais do que ganha e ter dificuldade para pagar suas contas."
+      next_node: null
+    escolha_2_2:
+      text: "Você pode até conseguir se manter no curto prazo, mas sem conseguir guardar dinheiro para imprevistos."
+      next_node: null
+    escolha_3_2:
+      text: "Você pode precisar parcelar mais compras, mas sem grandes impactos no seu orçamento."
+      next_node: null
+  correct_choice: "escolha_1_2"

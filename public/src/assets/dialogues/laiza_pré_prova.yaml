@@ -1,0 +1,4 @@
+dialogo_lala_introducão:
+  text: "Parabéns por todos esses dias aqui! Agora, queremos testar para ver se você de fato aprendeu o que deveria durante esses 3 dias aqui no banco. Boa sorte na Prova de Promoção!"
+  next_node: null
+  terminal: true

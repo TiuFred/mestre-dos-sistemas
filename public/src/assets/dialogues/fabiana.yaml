@@ -1,0 +1,72 @@
+dialogo_fabiana_introdução:
+  text: "Oi! Então, eu recebi meu pagamento e queria começar a usar aquele cartão pré-pago que me indicaram. Eu separo 300 reais por mês para os meus gastos extras, mas ouvi dizer que esse saldo pode expirar se eu não usar logo."
+  next_node: "fabiana_p1"
+  terminal: false
+
+fabiana_p1:
+  text: "Mas como funciona esse tal de cartão pré-pago?"
+  terminal: false
+  feedback:
+    character: "Fabiana"
+    question: "Como funciona o cartão pré-pago?"
+    correctAnswer: "A pessoa só pode gastar o valor que colocou antes no cartão."
+    tip: "Com o cartão pré-pago, você só pode gastar o dinheiro que você carregou no cartão, sem nenhuma taxa e sem nenhum juros."
+  choices:
+    escolha_1_1:
+      text: "O banco paga as compras e depois cobra com juros."
+      next_node: "fabiana_p2"
+    escolha_2_1:
+      text: "A pessoa pode gastar mesmo sem ter dinheiro disponível."
+      next_node: "fabiana_p2"
+    escolha_3_1:
+      text: "A pessoa só pode gastar o valor que colocou antes no cartão."
+      next_node: "fabiana_p2"
+  correct_choice: "escolha_3_1"
+
+fabiana_p2:
+  text: "Mas o que é esse tal de saldo que está no meu cartão pré-pago?"
+  terminal: false
+  feedback:
+    character: "Fabiana"
+    question: "O que é o saldo do cartão pré-pago?"
+    correctAnswer: "É o dinheiro que a pessoa coloca no cartão para poder usar."
+    tip: "O saldo do cartão pré-pago é exatamente o dinheiro que você mesmo carregou nele. O banco não empresta nem libera limite extra."
+  choices:
+    escolha_1_2:
+      text: "É um dinheiro que o banco empresta automaticamente."
+      next_node: "fabiana_p3"
+    escolha_2_2:
+      text: "É o dinheiro que a pessoa coloca no cartão para poder usar."
+      next_node: "fabiana_p3"
+    escolha_3_2:
+      text: "É um limite extra liberado pelo banco."
+      next_node: "fabiana_p3"
+  correct_choice: "escolha_2_2"
+
+fabiana_p3:
+  text: "Eu recebo 3.036 reais. Depois de pagar minhas contas básicas, sobram 300 reais. Se eu colocar os 300 reais no meu cartão e não usar, mas o saldo expirar após 1 mês, o que é melhor eu fazer?"
+  terminal: false
+  feedback:
+    character: "Fabiana"
+    question: "O que fazer com R$300 no pré-pago se o saldo expira em 1 mês?"
+    correctAnswer: "Usar parte do valor necessário e guardar o restante em outra forma segura."
+    tip: "Deixar o dinheiro expirar é prejuízo certo. O ideal é usar o necessário e guardar o restante em um lugar seguro, como poupança."
+  choices:
+    escolha_1_3:
+      text: "Usar parte do valor necessário e guardar o restante em outra forma segura."
+      next_node: "fabiana_pre_minigame"
+    escolha_2_3:
+      text: "Deixar o dinheiro parado no cartão até expirar."
+      next_node: "fabiana_pre_minigame"
+    escolha_3_3:
+      text: "Colocar ainda mais dinheiro no cartão para não perder o saldo."
+      next_node: "fabiana_pre_minigame"
+  correct_choice: "escolha_1_3"
+
+fabiana_pre_minigame:
+  text: "Aliás, não consigo ver quanto de saldo meu cartão está, você consegue ver para mim?"
+  terminal: true
+
+fabiana_pos_minigame:
+  text: "Muito obrigado! Agora, vou usar esse dinheiro que me resta de maneira saudável para não me comprometer financeiramente! Até logo!"
+  terminal: true

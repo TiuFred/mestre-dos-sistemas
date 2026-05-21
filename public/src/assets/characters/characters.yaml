@@ -1,0 +1,340 @@
+- name: "Laíza"
+  dialogues: "dialogue_laiza"
+  portrait: "client_laiza"
+
+  days:
+  - day: 0
+    order: 0
+    start_dialogue: "dialogo_laiza_introdução"
+
+  record:
+    nome: "Laíza"
+    idade: "25 anos"
+    profissao: "Professor de Ensino Médio"
+    renda: "R$ 4.500,00"
+
+  report:
+    - "Quer um empréstimo de R$ 1.200,00."
+    - "Vai usar o dinheiro para apostas."
+    - "Já pegou empréstimos antes."
+    - "Tem dificuldade em guardar dinheiro."
+    - "Precisa escolher entre pagar em menos ou mais parcelas."
+
+- name: "Cledson"
+  dialogues: "dialogue_cledson_d1"
+
+  portrait: "client_cledson"
+  characterTexture: "client_cledson"
+
+  days:
+    - day: 1
+      order: 1
+      start_dialogue: "dialogo_cledson_introdução"
+
+  record:
+    nome: "Cledson Almeida dos Santos"
+    idade: "25 anos"
+    profissao: "Professor de Ensino Médio"
+    renda: "R$ 4.500,00"
+
+  report:
+    - "Quer um empréstimo de R$ 1.200,00."
+    - "Vai usar o dinheiro para apostas."
+    - "Já pegou empréstimos antes."
+    - "Tem dificuldade em guardar dinheiro."
+    - "Precisa escolher entre pagar em menos ou mais parcelas."
+
+  minigames:
+    - "pular"
+# ===================================================================
+- name: "Fabiana"
+  dialogues: "dialogue_fabiana"
+  post_minigame_start: "fabiana_pos_minigame"
+  days:
+    - day: 1
+      order: 2
+      start_dialogue: "dialogo_fabiana_introdução"
+  portrait: "client_fabiana"
+
+  record:
+    nome: "Fabiana Costa Duarte"
+    idade: "27 anos"
+    profissao: "Assistente Administrativa"
+    renda: "R$ 3.036,00"
+
+  report:
+    - "Usa cartão pré-pago."
+    - "O saldo que sobra expira."
+    - "Gasta quase todo o salário com contas básicas."
+    - "Não consegue juntar dinheiro."
+    - "Está frustrada com o cartão."
+
+  minigames:
+    - "fabiana_minigame"
+# ===================================================================
+
+- name: "Fernanda"
+  dialogues: "dialogue_fernanda_d1"
+  days:
+    - day: 1
+      order: 3
+      start_dialogue: "dialogo_fernandaD1_introdução"
+  portrait: "client_fernanda"
+
+  record:
+    nome: "Fernanda Oliveira Martins"
+    idade: "24 anos"
+    profissao: "Desenvolvedora de Jogos"
+    renda: "R$ 4.800,00"
+
+  report:
+    - "Gasta por impulso."
+    - "Compra roupas e comida sem planejar."
+    - "Empresta dinheiro ao namorado e não recebe de volta."
+    - "Tem dificuldade em controlar os gastos."
+    - "Quer saber qual cartão escolher."
+
+  minigames:
+    - "teste"
+# ===================================================================
+
+- name: "Samantha"
+  dialogues: "dialogue_samantha"
+  days:
+    - day: 1
+      order: 4
+      start_dialogue: "dialogo_samantha_introdução"
+  portrait: "client_samantha"
+
+  record:
+    nome: "Samantha Albuquerque Prado"
+    idade: "35 anos"
+    profissao: "Advogada Corporativa"
+    renda: "R$ 7.590,00"
+
+  report:
+    - "Viu compras que não reconheceu no cartão."
+    - "Quer cancelar e pedir outro cartão."
+    - "Não tem dívidas."
+    - "Precisa entender a segurança do cartão."
+
+  minigames:
+    - "teste"
+
+# aqui entra o minigame do planejamento financeiro + troca de dia
+# ===================================================================
+
+- name: "Vanessa"
+  dialogues: "dialogue_vanessa"
+  days:
+    - day: 2
+      order: 1
+      start_dialogue: "dialogo_vanessa_introducão"
+  portrait: "client_vanessa"
+
+  record:
+    nome: "Vanessa Ribeiro Almeida"
+    idade: "26 anos"
+    profissao: "Administradora na empresa da família"
+    renda: "R$ 6.200,00"
+
+  report:
+    - "Quer 10.000 reais para viajar."
+    - "É o primeiro empréstimo dela."
+    - "Pode pagar em várias parcelas."
+    - "Tem ajuda da família se precisar."
+    - "Precisa escolher a melhor opção de pagamento."
+
+  minigames:
+    - "teste"
+# ===================================================================
+
+- name: "Roberto"
+  dialogues: "dialogue_roberto"
+  days:
+    - day: 2
+      order: 2
+      start_dialogue: "dialogo_roberto_introducão"
+  portrait: "client_roberto"
+
+  record:
+    nome: "Roberto Menezes Carvalho"
+    idade: "34 anos"
+    profissao: "Mecânico"
+    renda: "R$ 4.5054,00"
+
+  report:
+    - "Quer comprar um celular novo."
+    - "Tem esposa e dois filhos."
+    - "A renda da família é limitada."
+    - "Precisa evitar dívidas longas."
+    - "Precisa planejar antes de decidir."
+
+  minigames:
+    - "teste"
+# ===================================================================
+
+- name: "Cledson"
+  dialogues: "dialogue_cledson_d2"
+  days:
+    - day: 2
+      order: 3
+      start_dialogue: "dialogo_cledsonD2_introducão"
+  portrait: "client_cledson" # ver se vai trocar o sprite do cledson
+  
+  record:
+    nome: "Cledson Almeida dos Santos"
+    idade: "25 anos"
+    profissao: "Professor de Ensino Médio"
+    renda: "R$ 4.500,00"
+
+  report:
+    - "Quer um novo empréstimo de R$ 2.000,00."
+    - "Vai usar o dinheiro para apostas."
+    - "Já pegou empréstimos antes."
+    - "Tem dificuldade em guardar dinheiro."
+    - "Está cada vez mais apertado financeiramente."
+  
+  minigames:
+    - "teste"
+# ===================================================================
+
+- name: "Lucas"
+  dialogues: "dialogue_lucas"
+  days:
+    - day: 2
+      order: 4
+      start_dialogue: "dialogo_lucas_introducão"
+  portrait: "client_lucas"
+
+  record:
+    nome: "Lucas Ferreira Andrade"
+    idade: "32 anos"
+    profissao: "Médico Clínico Geral"
+    renda: "R$ 11.000,00"
+
+  report:
+    - "Quer financiar um carro."
+    - "Tem aluguel e contas altas."
+    - "A parcela pode ficar pesada no orçamento."
+    - "Precisa decidir quantas parcelas fazer."
+    - "Não pode comprometer todo o salário."
+  
+  minigames:
+    - "teste"
+
+# aqui entra o minigame do planejamento financeiro + troca de dia
+# ===================================================================
+
+- name: "Heitor"
+  dialogues: "dialogue_heitor"
+  days:
+    - day: 3
+      order: 1
+      start_dialogue: "dialogo_heitor_introducão"
+  portrait: "client_heitor"
+
+  record:
+    nome: "Heitor Nogueira Lima"
+    idade: "22 anos"
+    profissao: "Estagiário na MTC Saúde / Estudante de Farmácia"
+    renda: "R$ 2.277,00"
+
+  report:
+    - "Tem nome negativado."
+    - "Gasta muito com festas."
+    - "Já atrasou pagamentos antes."
+    - "Quer novo empréstimo."
+    - "Tem alto risco de não pagar."
+
+  minigames:
+    - "teste"
+# ===================================================================
+
+- name: "Fernanda"
+  dialogues: "dialogue_fernanda_d2"
+  days:
+    - day: 3
+      order: 2
+      start_dialogue: "dialogo_fernandaD2_introducão"
+  portrait: "client_fernanda"
+
+  record:
+    nome: "Fernanda Oliveira Martins"
+    idade: "24 anos"
+    profissao: "Desenvolvedora de Jogos"
+    renda: "R$ 4.800,00"
+
+  report:
+    - "Gasta por impulso."
+    - "Compra roupas e comida sem planejar."
+    - "Empresta dinheiro ao namorado e não recebe de volta."
+    - "Tem dificuldade em controlar os gastos."
+    - "Quer saber qual cartão escolher."
+
+  minigames:
+    - "teste"
+# ===================================================================
+
+- name: "Marcelo"
+  dialogues: "dialogue_marcelo"
+  days:
+    - day: 3
+      order: 3
+      start_dialogue: "dialogo_marcelo_introducão"
+  post_minigame_start: "marcelo_pos_minigame"
+  portrait: "client_marcelo"
+
+  record:
+    nome: "Marcelo Barros Silva"
+    idade: "38 anos"
+    profissao: "Caixa de Supermercado"
+    renda: "R$ 2.970,00"
+
+  report:
+    - "Pede empréstimo de 5.000 reais."
+    - "Diz que é para medicamento da filha."
+    - "Na verdade, usa dinheiro para apostas."
+    - "A renda é baixa para o valor pedido."
+    - "Grande chance de não conseguir pagar."
+
+  minigames:
+    - "marcelo_minigame"
+# ===================================================================
+
+- name: "Cledson"
+  dialogues: "dialogue_cledson_d3"
+  days:
+    - day: 3
+      order: 4
+      start_dialogue: "dialogo_cledsonD3_introducão"
+  portrait: "client_cledson" # ver se vai trocar o sprite do cledson
+
+  record:
+    nome: "Cledson Almeida dos Santos"
+    idade: "25 anos"
+    profissao: "Professor de Ensino Médio"
+    renda: "R$ 4.500,00"
+
+  report:
+    - "Cledson ganha 4.500 reais."
+    - "Ele já paga:"
+    - "1.400 reais de empréstimos"
+    - "900 reais de cartão"
+    - "1.000 reais de aluguel"
+    - "800 reais de despesas básicas"
+
+  minigames:
+    - "teste"
+
+- name: "Laíza"
+  dialogues: "dialogue_laiza_pre_prova"
+  days:
+    - day: 3
+      order: 5
+      start_dialogue: "dialogo_lala_introducão"
+  portrait: "client_laiza"
+  minigames:
+    - "teste"
+
+  # prova final

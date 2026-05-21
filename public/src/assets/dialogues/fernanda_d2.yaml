@@ -1,0 +1,79 @@
+dialogo_fernandaD2_introducão:
+  text: "Oi... então, as coisas fugiram um pouco do controle. Eu acabei usando o cartão mais do que devia e agora o banco está me negando compras porque diz que 'estourei o limite'. Eu queria pedir para aumentarem esse valor, mas ao mesmo tempo estou vendo que quase todo o meu salário já está indo para pagar conta e aluguel?"
+  next_node: "fernanda_p4"
+  terminal: false
+
+fernanda_p4:
+  text: "Quando o limite do cartão é ultrapassado, o que pode acontecer?"
+  terminal: false
+  choices: 
+    escolha_1_1:
+      text: "O banco aumenta o limite automaticamente."
+      next_node: "fernanda_p5"
+    escolha_2_1:
+      text: "Multa e juros por atraso."
+      next_node: "fernanda_p5"
+    escolha_3_1:
+      text: "A dívida desaparece."
+      next_node: "fernanda_p5"
+  correct_choice: "escolha_2_1"
+
+fernanda_p5:
+  text: "Aumentar o limite sem mudar o comportamento pode:"
+  terminal: false
+  choices:
+    escolha_1_2:
+      text: "Aumentar o risco de endividamento."
+      next_node: "fernanda_p6"
+    escolha_2_2:
+      text: "Resolver o problema."
+      next_node: "fernanda_p6"
+    escolha_3_2:
+      text: "Diminuir as faturas."
+      next_node: "fernanda_p6"
+  correct_choice: "escolha_1_2"
+
+fernanda_p6:
+  text: "Vendo meu dossiê, quanto dinheiro eu comprometo por mês?"
+
+  choices:
+    escolha_1_3:
+      text: "3.500 reais"
+      next_node: fernanda_p7
+    escolha_2_3:
+      text: "4.400 reais"
+      next_node: fernanda_p7
+    escolha_3_3:
+      text: "4.800 reais"
+      next_node: fernanda_p7
+  correct_choice: "escolha_2_3"
+
+fernanda_p7:
+  text: "E quanto sobra?"
+
+  choices:
+    escolha_1_4:
+      text: "1.300 reais"
+      next_node: fernanda_p8
+    escolha_2_4:
+      text: "400 reais"
+      next_node: fernanda_p8
+    escolha_3_4:
+      text: "800 reais"
+      next_node: fernanda_p8
+  correct_choice: "escolha_2_4"
+
+fernanda_p8:
+  text: "Se eu fizer mais 1.200 reais em compras, o que acontece?"
+
+  choices:
+    escolha_1_5:
+      text: "Continua dentro do orçamento."
+      next_node: null
+    escolha_2_5:
+      text: "Não impacta o salário."
+      next_node: null
+    escolha_3_5:
+      text: "Gasta mais do que sobra no mês."
+      next_node: null
+  correct_choice: "escolha_3_5"

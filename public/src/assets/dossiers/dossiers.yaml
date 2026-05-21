@@ -1,0 +1,186 @@
+- name: "Laíza"
+  day: 0
+  record:
+    nome: "Laíza Oliveira Lima"
+    idade: "32 anos"
+    profissao: "Gerente do Banco"
+    renda: 
+  report:
+
+- name: "Cledson"
+  day: 1
+  record:
+    nome: "Cledson Almeida dos Santos"
+    idade: "25 anos"
+    profissao: "Professor de Ensino Médio"
+    renda: "R$ 4.500,00"
+  report:
+    - "Quer um empréstimo de R$ 1.200,00."
+    - "Vai usar o dinheiro para apostas."
+    - "Já pegou empréstimos antes."
+    - "Tem dificuldade em guardar dinheiro."
+    - "Precisa escolher entre pagar em menos ou mais parcelas."
+
+- name: "Fabiana"
+  day: 1
+  record:
+    nome: "Fabiana Costa Duarte"
+    idade: "27 anos"
+    profissao: "Assistente Administrativa"
+    renda: "R$ 3.036,00"
+  report:
+    - "Usa cartão pré-pago."
+    - "O saldo que sobra expira."
+    - "Gasta quase todo o salário com contas básicas."
+    - "Não consegue juntar dinheiro."
+    - "Está frustrada com o cartão."
+
+- name: "Fernanda"
+  day: 1
+  record:
+    nome: "Fernanda Oliveira Martins"
+    idade: "24 anos"
+    profissao: "Desenvolvedora de Jogos"
+    renda: "R$ 4.800,00"
+  report:
+    - "Gasta por impulso."
+    - "Compra roupas e comida sem planejar."
+    - "Empresta dinheiro ao namorado e não recebe de volta."
+    - "Tem dificuldade em controlar os gastos."
+    - "Quer saber qual cartão escolher."
+
+- name: "Samantha"
+  day: 1
+  record:
+    nome: "Samantha Albuquerque Prado"
+    idade: "35 anos"
+    profissao: "Advogada Corporativa"
+    renda: "R$ 7.590,00"
+  report:
+    - "Viu compras que não reconheceu no cartão."
+    - "Quer cancelar e pedir outro cartão."
+    - "Não tem dívidas."
+    - "Precisa entender a segurança do cartão."
+
+- name: "Vanessa"
+  day: 2
+  record:
+    nome: "Vanessa Ribeiro Almeida"
+    idade: "26 anos"
+    profissao: "Administradora na empresa da família"
+    renda: "R$ 6.200,00"
+  report:
+    - "Quer 10.000 reais para viajar."
+    - "É o primeiro empréstimo dela."
+    - "Pode pagar em várias parcelas."
+    - "Tem ajuda da família se precisar."
+    - "Precisa escolher a melhor opção de pagamento."
+
+- name: "Roberto"
+  day: 2
+  record:
+    nome: "Roberto Menezes Carvalho"
+    idade: "34 anos"
+    profissao: "Mecânico"
+    renda: "R$ 4.5054,00"
+  report:
+    - "Quer comprar um celular novo."
+    - "Tem esposa e dois filhos."
+    - "A renda da família é limitada."
+    - "Precisa evitar dívidas longas."
+    - "Precisa planejar antes de decidir."
+
+- name: "Cledson"
+  day: 2
+  record:
+    nome: "Cledson Almeida dos Santos"
+    idade: "25 anos"
+    profissao: "Professor de Ensino Médio"
+    renda: "R$ 4.500,00"
+  report:
+    - "Quer um novo empréstimo de R$ 2.000,00."
+    - "Vai usar o dinheiro para apostas."
+    - "Já pegou empréstimos antes."
+    - "Tem dificuldade em guardar dinheiro."
+    - "Está cada vez mais apertado financeiramente."
+
+- name: "Lucas"
+  day: 2
+  record:
+    nome: "Lucas Ferreira Andrade"
+    idade: "32 anos"
+    profissao: "Médico Clínico Geral"
+    renda: "R$ 11.000,00"
+  report:
+    - "Quer financiar um carro."
+    - "Tem aluguel e contas altas."
+    - "A parcela pode ficar pesada no orçamento."
+    - "Precisa decidir quantas parcelas fazer."
+    - "Não pode comprometer todo o salário."
+
+- name: "Heitor"
+  day: 3
+  record:
+    nome: "Heitor Nogueira Lima"
+    idade: "22 anos"
+    profissao: "Estagiário na MTC Saúde / Estudante de Farmácia"
+    renda: "R$ 2.277,00"
+  report:
+    - "Tem nome negativado."
+    - "Gasta muito com festas."
+    - "Já atrasou pagamentos antes."
+    - "Quer novo empréstimo."
+    - "Tem alto risco de não pagar."
+
+- name: "Fernanda"
+  day: 3
+  record:
+    nome: "Fernanda Oliveira Martins"
+    idade: "24 anos"
+    profissao: "Desenvolvedora de Jogos"
+    renda: "R$ 4.800,00"
+  report:
+    - "Gasta por impulso."
+    - "Compra roupas e comida sem planejar."
+    - "Empresta dinheiro ao namorado e não recebe de volta."
+    - "Tem dificuldade em controlar os gastos."
+    - "Quer saber qual cartão escolher."
+    - "Compromete 4.400 reais de sua renda mensal."
+
+- name: "Marcelo"
+  day: 3
+  record:
+    nome: "Marcelo Barros Silva"
+    idade: "38 anos"
+    profissao: "Caixa de Supermercado"
+    renda: "R$ 2.970,00"
+  report:
+    - "Pede empréstimo de 5.000 reais."
+    - "Diz que é para medicamento da filha."
+    - "Na verdade, usa dinheiro para apostas."
+    - "A renda é baixa para o valor pedido."
+    - "Grande chance de não conseguir pagar."
+
+- name: "Cledson"
+  day: 3
+  record:
+    nome: "Cledson Almeida dos Santos"
+    idade: "25 anos"
+    profissao: "Professor de Ensino Médio"
+    renda: "R$ 4.500,00"
+  report:
+    - "Cledson ganha 4.500 reais."
+    - "Ele já paga:"
+    - "1.400 reais de empréstimos"
+    - "900 reais de cartão"
+    - "1.000 reais de aluguel"
+    - "800 reais de despesas básicas"
+
+- name: "Laíza"
+  day: 3
+  record:
+    nome: "Laíza Oliveira Lima"
+    idade: "32 anos"
+    profissao: "Gerente do Banco"
+    renda: 
+  report:

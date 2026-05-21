@@ -1,0 +1,82 @@
+dialogo_cledsonD3_introducão:
+  text: "Pô, eu de novo aqui... a situação apertou de verdade. O tucaninho não deu o retorno que eu esperava e as dívidas antigas estão batendo na porta. Preciso de 5 mil reais urgente pra quitar o que devo e tentar respirar. O banco me ofereceu um prazo bem longo, mas não sei se o que sobra do meu salário dá conta de mais essa parcela."
+  next_node: "cledson_p7"
+  terminal: false
+
+cledson_p7:
+  text: "Pegar novo empréstimo para pagar dívidas antigas é chamado de:"
+  terminal: false
+  choices: 
+    escolha_1_1:
+      text: "Planejamento financeiro."
+      next_node: "cledson_p8"
+    escolha_2_1:
+      text: "Ciclo de dívida."
+      next_node: "cledson_p8"
+    escolha_3_1:
+      text: "Investimento."
+      next_node: "cledson_p8"
+  correct_choice: "escolha_2_1"
+
+cledson_p8:
+  text: "Quando quase todo o salário já está comprometido, um novo empréstimo tende a:"
+  terminal: false
+  choices:
+    escolha_1_2:
+      text: "Aumentar o risco de não pagamento."
+      next_node: "cledson_p9"
+    escolha_2_2:
+      text: "Resolver todas as dívidas."
+      next_node: "cledson_p9"
+    escolha_3_2:
+      text: "Diminuir os juros antigos."
+      next_node: "cledson_p9"
+  correct_choice: "escolha_1_2"
+
+cledson_p9:
+  text: "Vendo meu dossiê, quanto dinheiro eu comprometo por mês?"
+
+  choices:
+    escolha_1_3:
+      text: "3.500 reais"
+      next_node: cledson_p10
+    escolha_2_3:
+      text: "4.100 reais"
+      next_node: cledson_p10
+    escolha_3_3:
+      text: "4.500 reais"
+      next_node: cledson_p10
+  correct_choice: "escolha_2_3"
+
+cledson_p10:
+  text: "Quanto sobra?"
+
+  choices:
+    escolha_1_4:
+      text: "400 reais"
+      next_node: cledson_p11
+    escolha_2_4:
+      text: "900 reais"
+      next_node: cledson_p11
+    escolha_3_4:
+      text: "1.400 reais"
+      next_node: cledson_p11
+  correct_choice: "escolha_1_4"
+
+cledson_p11:
+  text: "O banco oferece 5.000 reais em 24 parcelas de 320 reais. 320 reais representa quase quanto da sobra mensal?"
+
+  choices:
+    escolha_1_5:
+      text: "Quase todo o valor que sobra, sendo muito caro para a realidade."
+      next_node: null
+      event: "achievement_day_3_complete"
+    escolha_2_5:
+      text: "Metade do que sobra, valendo a pena o empréstimo."
+      next_node: null
+      event: "achievement_day_3_complete"
+    escolha_3_5:
+      text: "Um valor pequeno que não impacta."
+      next_node: null
+      event: "achievement_day_3_complete"
+  correct_choice: "escolha_1_5"

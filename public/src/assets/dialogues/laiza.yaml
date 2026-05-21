@@ -1,0 +1,38 @@
+dialogo_laiza_introdução:
+  text: "Bom dia novo funcionário, meu nome é Laíza e sou gerente aqui do banco. Estamos muito felizes de ter alguém novo e tão bom quanto você aqui no banco."
+  next_node: "laiza_d2"
+  terminal: false
+
+laiza_d2:
+  text: "Aqui no banco, você terá uma ferramenta muito importantes para interagir com os clientes, que é o Dossiê, que mostra informações do cliente."
+  next_node: "laiza_d3"
+  terminal: false
+
+laiza_d3:
+  text: "Para ajudar os clientes, você também tem o guia, que você pode consultar alguns conceitos importantes."
+  next_node: "laiza_d4"
+  terminal: false
+
+laiza_d4:
+  text: "Bom trabalho!"
+  terminal: true
+
+laiza_pos_prova_inicio:
+  text: "Parabéns por concluir a prova de promoção. Eu acompanhei seu desempenho todos esses dias, e vim conversar com voce antes do encerramento de seu período de testes."
+  next_node: "laiza_pos_prova_d2"
+  terminal: false
+
+laiza_pos_prova_d2:
+  text: "Independentemente do resultado, o mais importante é que voce chegou ate aqui aplicando o que aprendeu com a diferente situação de cada cliente."
+  next_node: "laiza_pos_prova_d3"
+  terminal: false
+
+laiza_pos_prova_d3:
+  text: "Continue estudando, observando os detalhes e tomando decisões com responsabilidade. Isso faz toda a diferenca no atendimento e também na sua vida."
+  next_node: "laiza_pos_prova_d4"
+  terminal: false
+
+laiza_pos_prova_d4:
+  text: "Agora vamos juntos ver o seu resultado final."
+  terminal: true
+

@@ -1,0 +1,64 @@
+dialogo_vanessa_introducão:
+  text: "Olá! Eu estou planejando uma viagem e vou precisar de uns 10 mil reais. Minha renda é boa, mas não quero dar um passo maior que a perna. Vi umas opções de parcelamento com valores diferentes no final."
+  next_node: "vanessa_p1"
+  terminal: false
+
+vanessa_p1:
+  text: "Quando eu pego um empréstimo, o que significa aquele \"total do valor pago\"?"
+  terminal: false
+  feedback:
+    character: "Vanessa"
+    question: "O que significa o total do valor pago de um empréstimo?"
+    correctAnswer: "É o valor do empréstimo mais os juros."
+    tip: "O total do valor pago significa tudo que será pago no final: o valor do empréstimo mais todo o valor que será pago de juros."
+  choices:
+    escolha_1_1:
+      text: "É o valor do empréstimo mais os juros."
+      next_node: "vanessa_p2"
+    escolha_2_1:
+      text: "É só o valor que foi pedido."
+      next_node: "vanessa_p2"
+    escolha_3_1:
+      text: "É apenas o valor da primeira parcela."
+      next_node: "vanessa_p2"
+  correct_choice: "escolha_1_1"
+
+vanessa_p2:
+  text: "Sempre que eu pagar parcelas menores, quer dizer que vou pagar menos no final?"
+  terminal: false
+  feedback:
+    character: "Vanessa"
+    question: "Parcelas menores significam pagar menos no total?"
+    correctAnswer: "Não, porque mais parcelas podem aumentar os juros."
+    tip: "Em qualquer empréstimo, é preciso avaliar os juros em relação à parcela. Parcelas menores com mais tempo geram juros maiores. Na maioria das vezes, menos parcelas é melhor."
+  choices:
+    escolha_1_2:
+      text: "Sim, sempre."
+      next_node: "vanessa_p3"
+    escolha_2_2:
+      text: "Sim, porque o banco ajuda o cliente."
+      next_node: "vanessa_p3"
+    escolha_3_2:
+      text: "Não, porque mais parcelas podem aumentar os juros."
+      next_node: "vanessa_p3"
+  correct_choice: "escolha_3_2"
+
+vanessa_p3:
+  text: "Eu quero pegar 10.000 reais para viajar. Eu ganho 6.200 reais por mês. Pensando no meu salário e no valor total que vou pagar no final, qual opção é mais equilibrada para mim?"
+  terminal: true
+  feedback:
+    character: "Vanessa"
+    question: "Qual parcela é mais equilibrada para quem ganha R$6.200?"
+    correctAnswer: "5 parcelas de 2.300 reais."
+    tip: "A melhor opção é 5×R$2.300, totalizando R$11.500. Apesar da parcela maior, o valor final é menor por ter menos tempo de juros."
+  choices:
+    escolha_1_3:
+      text: "10 parcelas de 1.200 reais."
+      next_node: null
+    escolha_2_3:
+      text: "5 parcelas de 2.300 reais."
+      next_node: null
+    escolha_3_3:
+      text: "20 parcelas de 700 reais."
+      next_node: null
+  correct_choice: "escolha_2_3"

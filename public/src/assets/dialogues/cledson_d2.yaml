@@ -1,0 +1,64 @@
+dialogo_cledsonD2_introducão:
+  text: "Fala de novo! Lembra de mim? Pois é, segui seus conselhos na última vez, mas o mundo não para, né? Estava pensando aqui... o que exatamente muda se essa porcentagem aumentar um pouquinho? Parece pouco, mas no fim do mês eu sinto o baque. E outra, me ofereceram mais crédito, mas já tenho uns boletos acumulados. E agora?"
+  next_node: "cledson_p4"
+  terminal: false
+
+cledson_p4:
+  text: "Mas, afinal, o que são juros?"
+  terminal: false
+  feedback:
+    character: "Cledson"
+    question: "O que são juros?"
+    correctAnswer: "Um valor extra pago pelo uso do dinheiro emprestado."
+    tip: "Juros é um valor que as pessoas pagam ao banco ao pegar empréstimo, como uma taxa pelo uso do dinheiro emprestado."
+  choices:
+    escolha_1_1:
+      text: "Um desconto dado pelo banco."
+      next_node: "cledson_p5"
+    escolha_2_1:
+      text: "Um valor extra pago pelo uso do dinheiro emprestado."
+      next_node: "cledson_p5"
+    escolha_3_1:
+      text: "Um prêmio por pagar atrasado."
+      next_node: "cledson_p5"
+  correct_choice: "escolha_2_1"
+
+cledson_p5:
+  text: "Se os juros aumentarem de 5% para 8%, o que acontece?"
+  terminal: false
+  feedback:
+    character: "Cledson"
+    question: "O que acontece se os juros subirem de 5% para 8%?"
+    correctAnswer: "A parcela tende a ficar maior."
+    tip: "Se Cledson começar a pagar 8% ao invés de 5%, com a mesma quantidade de parcelas, o valor de cada parcela ficará maior que antes."
+  choices:
+    escolha_1_2:
+      text: "A parcela tende a ficar maior."
+      next_node: "cledson_p6"
+    escolha_2_2:
+      text: "A dívida diminui."
+      next_node: "cledson_p6"
+    escolha_3_2:
+      text: "Nada muda."
+      next_node: "cledson_p6"
+  correct_choice: "escolha_1_2"
+
+cledson_p6:
+  text: "Para o empréstimo de 2000 reais que quero pegar, qual é a decisão mais responsável?"
+  terminal: true
+  feedback:
+    character: "Cledson"
+    question: "Qual decisão mais responsável para quem já tem dívidas?"
+    correctAnswer: "Não pegar novo empréstimo porque já tem dívidas."
+    tip: "No caso de Cledson, não é necessário um novo empréstimo. Quem já tem dívidas acumuladas não deve contrair novas dívidas."
+  choices:
+    escolha_1_3:
+      text: "Juros 5% - total 2.100"
+      next_node: null
+    escolha_2_3:
+      text: "Juros 8% - total 2.160"
+      next_node: null
+    escolha_3_3:
+      text: "Não pegar novo empréstimo porque já tem dívidas."
+      next_node: null
+  correct_choice: "escolha_3_3"

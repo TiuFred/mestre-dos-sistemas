@@ -1,0 +1,67 @@
+dialogo_samantha_introdução:
+  text: "Olha isso aqui no meu celular!"
+  next_node: "samantha_p1"
+  terminal: false
+
+samantha_p1:
+  text: "Existem compras que eu não fiz. O que eu faço?"
+  terminal: false
+  feedback:
+    character: "Samantha"
+    question: "O que fazer ao ver compras não reconhecidas no cartão?"
+    correctAnswer: "Cancelar o cartão e avisar o banco imediatamente."
+    tip: "Caso compras não reconhecidas sejam avistadas, entre em contato imediatamente com o banco para rever essa compra."
+  choices:
+    escolha_1_1:
+      text: "Ignorar e esperar a próxima fatura."
+      next_node: "samantha_p2"
+    escolha_2_1:
+      text: "Cancelar o cartão e avisar o banco imediatamente."
+      next_node: "samantha_p2"
+    escolha_3_1:
+      text: "Continuar usando normalmente."
+      next_node: "samantha_p2"
+  correct_choice: "escolha_2_1"
+
+samantha_p2:
+  text: "Mas por que preciso proteger a senha e os números do meu cartão, se ele está com meu nome?"
+  terminal: false
+  feedback:
+    character: "Samantha"
+    question: "Por que proteger senha e números do cartão?"
+    correctAnswer: "Para evitar fraudes e compras indevidas."
+    tip: "A senha e os números do cartão em mãos erradas podem te endividar gravemente, já que todo seu dinheiro está ali, e muitas vezes a situação não se reverte."
+  choices:
+    escolha_1_2:
+      text: "Para evitar fraudes e compras indevidas."
+      next_node: "samantha_p3"
+    escolha_2_2:
+      text: "Para aumentar o limite automaticamente."
+      next_node: "samantha_p3"
+    escolha_3_2:
+      text: "Para pagar menos juros."
+      next_node: "samantha_p3"
+  correct_choice: "escolha_1_2"
+
+samantha_p3:
+  text: "Eu percebi movimentações suspeitas no meu cartão e estou preocupada com a segurança dos meus dados. O que devo fazer para evitar prejuízo financeiro?"
+  terminal: true
+  feedback:
+    character: "Samantha"
+    question: "Como agir diante de movimentações suspeitas no cartão?"
+    correctAnswer: "Solicitar o bloqueio imediato do cartão e acompanhar o estorno das compras com o banco."
+    tip: "Ao ver operações não reconhecidas, entre em contato imediatamente com seu banco e peça para rever as compras — isso pode comprometer sua saúde financeira por algo que você nem comprou."
+  choices:
+    escolha_1_3:
+      text: "Esperar fechar a fatura para ver se as compras permanecem."
+      next_node: null
+      event: "achievement_day_1_complete"
+    escolha_2_3:
+      text: "Solicitar o bloqueio imediato do cartão e acompanhar o estorno das compras com o banco."
+      next_node: null
+      event: "achievement_day_1_complete"
+    escolha_3_3:
+      text: "Continuar usando o cartão normalmente enquanto observo se surgem novas compras."
+      next_node: null
+      event: "achievement_day_1_complete"
+  correct_choice: "escolha_2_3"

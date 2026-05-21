@@ -1,0 +1,64 @@
+dialogo_fernandaD1_introdução:
+  text: "Oi! Então, eu estou pensando em trocar meu tipo de cartão, já que tenho o pré-pago, mas me falaram sobre um tal de cartão de débito."
+  next_node: "fernanda_p1"
+  terminal: false
+
+fernanda_p1:
+  text: "Você pode me explicar a principal diferença entre o pré-pago e o cartão de débito?"
+  terminal: false
+  feedback:
+    character: "Fernanda"
+    question: "Qual a diferença entre cartão pré-pago e débito?"
+    correctAnswer: "No pré-pago, é preciso colocar dinheiro antes para usar. Já no débito, o valor sai direto da conta bancária."
+    tip: "O cartão pré-pago exige que você carregue saldo antes de usar. O débito desconta direto da sua conta bancária a cada compra."
+  choices:
+    escolha_1_1:
+      text: "No pré-pago, é preciso colocar dinheiro antes para usar. Já no débito, o valor sai direto da conta bancária."
+      next_node: "fernanda_p2"
+    escolha_2_1:
+      text: "No débito, é preciso carregar dinheiro antes. Já no pré-pago, o banco empresta automaticamente."
+      next_node: "fernanda_p2"
+    escolha_3_1:
+      text: "Os dois funcionam exatamente da mesma forma."
+      next_node: "fernanda_p2"
+  correct_choice: "escolha_1_1"
+
+fernanda_p2:
+  text: "Mas por que esse tal de débito vai me ajudar?"
+  terminal: false
+  feedback:
+    character: "Fernanda"
+    question: "Por que o cartão de débito ajuda no controle financeiro?"
+    correctAnswer: "Porque só permite gastar o dinheiro que já está na conta."
+    tip: "O cartão de débito apenas permite o gasto do dinheiro que já está na conta bancária, evitando gastos além do que você tem."
+  choices:
+    escolha_1_2:
+      text: "Porque aumenta o limite automaticamente."
+      next_node: "fernanda_p3"
+    escolha_2_2:
+      text: "Porque só permite gastar o dinheiro que já está na conta."
+      next_node: "fernanda_p3"
+    escolha_3_2:
+      text: "Porque permite parcelar compras sem juros."
+      next_node: "fernanda_p3"
+  correct_choice: "escolha_2_2"
+
+fernanda_p3:
+  text: "Eu tenho 4.800 reais na minha conta.\nJá gastei 4.200 reais neste mês.\nSe eu comprar uma bolsa de 700 reais no débito, o que acontece?"
+  terminal: false
+  feedback:
+    character: "Fernanda"
+    question: "Saldo de R$600, compra de R$700 no débito: o que acontece?"
+    correctAnswer: "A compra pode ser aprovada usando o cheque especial."
+    tip: "4.800 - 4.200 = R$600 de saldo. Como a bolsa custa R$700, a compra é negada por falta de saldo — o débito só opera com o que há na conta."
+  choices:
+    escolha_1_3:
+      text: "A compra será negada por falta de saldo."
+      next_node: null
+    escolha_2_3:
+      text: "A compra pode ser aprovada usando o cheque especial."
+      next_node: null
+    escolha_3_3:
+      text: "A compra será aprovada sem nenhum custo adicional."
+      next_node: null
+  correct_choice: "escolha_2_3"

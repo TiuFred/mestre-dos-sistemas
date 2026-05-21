@@ -1,0 +1,69 @@
+dialogo_marcelo_introducão:
+  text: "Olha, eu não gosto de pedir dinheiro, mas é para saúde, preciso comprar uns medicamentos caros. Ganho pouco mais de dois salários mínimos e o banco me ofereceu 5 mil reais. As parcelas parecem caber no bolso, mas queria ter certeza se vou conseguir comer e pagar o aluguel depois de quitar a prestação todo mês."
+  next_node: "marcelo_p1"
+  terminal: false
+
+
+marcelo_p1:
+  text: "Antes de liberar um empréstimo, o banco deve analisar:"
+  terminal: false
+  choices: 
+    escolha_1_1:
+      text: "A capacidade real de pagamento."
+      next_node: "marcelo_p2"
+    escolha_2_1:
+      text: "Apenas a história contada."
+      next_node: "marcelo_p2"
+    escolha_3_1:
+      text: "A simpatia do cliente."
+      next_node: "marcelo_p2"
+  correct_choice: "escolha_1_1"
+
+marcelo_p2:
+  text: "Se a parcela é alta em relação à renda, o risco é:"
+  terminal: false
+  choices:
+    escolha_1_2:
+      text: "Aumentar a renda."
+      next_node: "marcelo_p3"
+    escolha_2_2:
+      text: "Diminuir juros."
+      next_node: "marcelo_p3"
+    escolha_3_2:
+      text: "Não conseguir pagar depois."
+      next_node: "marcelo_p3"
+  correct_choice: "escolha_3_2"
+
+marcelo_p3:
+  text: "O banco me ofereceu 5.000 reais com juros em 12 parcelas de 520 reais. Qual o total pago?"
+
+  choices:
+    escolha_1_3:
+      text: "6.240 reais"
+      next_node: marcelo_p4
+    escolha_2_3:
+      text: "5.520 reais"
+      next_node: marcelo_p4
+    escolha_3_3:
+      text: "5.000 reais"
+      next_node: marcelo_p4
+  correct_choice: "escolha_1_3"
+
+marcelo_p4:
+  text: "Eu já tenho gastos mensais de 1.900 reais. Após pagar esses gastos e a parcela, quanto sobra?"
+
+  choices:
+    escolha_1_4:
+      text: "550 reais"
+      next_node: null
+    escolha_2_4:
+      text: "30 reais"
+      next_node: null
+    escolha_3_54:
+      text: "- 550 reais"
+      next_node: null
+  correct_choice: "escolha_1_4"
+
+marcelo_pos_minigame:
+  text: "Ah não! Você me descobriu. Vou ir embora agora, já que esse banco não aceita pessoas fraudulentas como eu."
+  terminal: true

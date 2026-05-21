@@ -1,0 +1,64 @@
+dialogo_heitor_introducão:
+  text: "Fala, beleza? Cara, surgiu o ingresso pro Master Ball e eu NÃO POSSO perder. Mas antes de pedir dinheiro, queria tirar algumas dúvidas com você!"
+  next_node: "heitor_p1"
+  terminal: false
+
+heitor_p1:
+  text: "Estar com o nome sujo significa que:"
+  terminal: false
+  feedback:
+    character: "Heitor"
+    question: "O que significa estar com o nome sujo?"
+    correctAnswer: "A pessoa tem dívidas atrasadas registradas."
+    tip: "Estar com o nome sujo significa que a pessoa tem dívidas atrasadas e registradas nos órgãos de proteção ao crédito."
+  choices:
+    escolha_1_1:
+      text: "A pessoa tem crédito liberado automaticamente."
+      next_node: "heitor_p2"
+    escolha_2_1:
+      text: "A pessoa tem dívidas atrasadas registradas."
+      next_node: "heitor_p2"
+    escolha_3_1:
+      text: "O banco não pode cobrar juros."
+      next_node: "heitor_p2"
+  correct_choice: "escolha_2_1"
+
+heitor_p2:
+  text: "Parcelar em mais vezes com juros maiores faz o quê?"
+  terminal: false
+  feedback:
+    character: "Heitor"
+    question: "Parcelar mais vezes com juros maiores: qual o efeito?"
+    correctAnswer: "Aumenta o valor total pago."
+    tip: "Se você parcelar mais vezes com juros maior, o valor total do empréstimo será maior por conta das taxas acumuladas ao longo do tempo."
+  choices:
+    escolha_1_2:
+      text: "Aumenta o valor total pago."
+      next_node: "heitor_p3"
+    escolha_2_2:
+      text: "Diminui a dívida."
+      next_node: "heitor_p3"
+    escolha_3_2:
+      text: "Não muda o valor final."
+      next_node: "heitor_p3"
+  correct_choice: "escolha_1_2"
+
+heitor_p3:
+  text: "Para ir pro Master Ball custa 6.700 reais. Eu sei que já estou meio enrolado com o cartão e meu nome não está lá essas coisas, mas vi que dá pra parcelar em 18 vezes. Qual dessas opções de juros vai me ferrar menos no final?"
+  terminal: true
+  feedback:
+    character: "Heitor"
+    question: "Qual parcelamento de R$6.700 tem o menor custo total?"
+    correctAnswer: "10 vezes sem juros."
+    tip: "A opção sem juros é sempre a mais barata. 12x com 3% e 18x com 2% ao mês geram juros compostos que encarecem muito o valor final."
+  choices:
+    escolha_1_3:
+      text: "10 vezes sem juros."
+      next_node: null
+    escolha_2_3:
+      text: "12 vezes com 3% de juros ao mês."
+      next_node: null
+    escolha_3_3:
+      text: "18 vezes com 2% de juros ao mês."
+      next_node: null
+  correct_choice: "escolha_1_3"
